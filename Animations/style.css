@@ -1,0 +1,946 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0a0a0a;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    background-color: black;
+    width: 4px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(59, 59, 59);
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -5;
+}
+.boxpadre{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-left: -10px;
+    margin-top: -20px;
+    pointer-events: none;
+}
+
+.button-home{
+    border: 3px solid black;
+    box-shadow: 0 0 20px black;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(146, 0, 0);
+    transition: .2s linear;
+}
+
+.button-home:hover{
+    scale: 1.1;
+}
+
+.button-home a{
+    color: white;
+    text-decoration: none;
+    padding:  8px 10px;
+}
+
+.header-container{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 39);
+    padding: 5px 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 5px black;
+    z-index: 999;
+}
+
+.animal{
+    display: none;
+    margin-right: -30px;
+}
+
+.ul,li{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 17px;
+}
+
+.brand a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: .2s linear;
+    padding: 7px 9px;
+    border-radius: 10px;
+}
+
+.ul a:hover{
+    background-color: rgb(146, 0, 0);
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.05);
+}
+
+.wraper{
+    height: 100vh;
+    width: 100%;
+    background-image: url(imgAnimations/Imagen-lofi.jpg);
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    place-items: center;
+}
+
+.info-content{
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.main{
+    height: 400px;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 55%, rgb(0, 0, 0, 0.9));
+    min-width: 400px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    transition: .3s linear;
+    box-shadow: 0 0 20px black;
+}
+
+.main:hover{
+    transform: scale(1.01);
+}
+
+.name-me{
+    color: white;
+    font-size: 55px;
+    margin-top: -100px;
+    cursor: default;
+
+}
+
+.subtitle{
+    font-size: 30px;
+    margin-top: -25px;
+    color: white;
+    cursor: default;
+}
+
+
+.info-me{
+    font-weight: bolder;
+    padding: 0 150px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.ul2{
+    display: flex;
+    gap: 40px;
+    margin-top: 250px;
+}
+
+.ico-redes{
+    font-size: 25px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: white;
+    transition: .2s linear;
+}
+
+.ico-redes:hover{
+    filter: brightness(0.3);
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.ico-redes a{
+    color: rgb(5, 0, 0);
+}
+
+.after-ig, 
+.after-git, 
+.after-twi, 
+.after-linkedIn, 
+.after-thr{
+    text-decoration: none;
+}
+
+.after-ig:hover::after{
+    content: 'Instagram';
+    margin-left: 5px;
+}
+
+.after-git:hover::after{
+    content: 'GitHub';
+    margin-left: 5px;
+}
+
+.after-twi:hover::after{
+    content: 'Twitter';
+    margin-left: 5px;
+}
+
+.after-linkedIn:hover::after{
+    content: 'LinkedIn';
+    margin-left: 5px;
+}
+
+.after-thr:hover::after{
+    content: 'Threads';
+    margin: 5px;
+}
+
+.iconos-redes{
+    position: absolute;
+}
+
+.about-me{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-mau{
+    width: 350px;
+    height: 500px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0 0 20px black;
+    transition: .3s linear;
+}
+
+.img-mau:hover{
+    scale: 1.03;
+}
+
+.img-mau img{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.img-mau a{
+    position: absolute;
+    z-index: 20;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: -345px;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+.sobremi{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 20px black;
+    /*background-color: #101022;*/
+    background:linear-gradient(#101022 20%, black);
+    transition: .3s linear;
+}
+
+.sobremi:hover{
+    transform: scale(1.03);
+}
+
+.title-sonbre-mi{
+    font-size: 50px;
+    padding: 0px 200px;
+    border-radius: 20px;
+    background: rgb(17, 17, 17);
+    cursor: default;
+}
+
+.info-sobre-mi{
+    padding: 0 50px;
+    text-align: center;
+}
+
+.skills-title{
+    font-size: 30px;
+    margin-bottom: -20px;
+    padding: 10px 100px;
+    border-radius: 20px;
+    background: rgb(17, 17, 17);
+    cursor: default;
+}
+
+.my-skills{
+    width: 90%;
+    height: 200px;
+    /*border: 3px solid black;*/
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: .2s linear;
+    /*box-shadow: 0 0 20px black;*/
+}
+
+/*.my-skills:hover{
+    scale: 1.02;
+}*/
+
+.ht{
+    font-size: 50px;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: orangered;
+}
+.cs{
+    font-size: 50px;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: rgb(83, 160, 190);
+}
+.js{
+    font-size: 50px;
+    gap: 10px;
+    margin-left: 10px;
+    color: yellow;
+}
+.skill-name{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: default;
+}
+
+#proyects{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(10, 10, 10);
+    box-shadow: 0 0 20px black;
+    transition: .2s linear;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.proyects-title{
+    padding: 5px 500px;
+    border-radius: 20px;
+    border: 3px solid black;
+    font-size: 50px;
+    background: rgb(17, 17, 17);
+    margin: 20px 0px;
+    color: white;
+    cursor: default;
+}
+
+.all-cards{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.card img{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title-card{
+    font-size: 30px;
+    margin-top: 0px;
+    padding: 10px 20px;
+    color: white;
+    background: black;
+    width: 210px;
+    text-align: center;
+    cursor: default;
+}
+
+.title-card-porfolio{
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    background: black;
+    width: 210px;
+    cursor: default;
+}
+
+.card-blur{
+    width: 250px;
+    height: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(10, 10, 10);
+    box-shadow: 0 0 20px black;
+    transition: .2s linear;
+    filter: grayscale(1);
+
+}
+
+.card-blur:hover{
+    transform: translateY(-10px);
+}
+
+.img-card-blur{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title-card-blur{
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    background: black;
+    width: 210px;
+    cursor: default;
+}
+
+.ul4-porfolio{
+    display: flex;
+    gap: 50px;
+    margin-top: 31px;
+    background-color: rgb(146, 0, 0);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.ul4-porfolio li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.ul4{
+    display: flex;
+    gap: 50px;
+    margin-top: 25px;
+    background-color: rgb(146, 0, 0);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.ul4 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.ul4 li a:hover, .ul4-porfolio li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.tarjetas-blur{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+
+}
+
+
+.section-contact{
+    min-height: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 50px 55px;
+    border: 3px solid rgb(255, 255, 255);
+    border-right: none;
+    text-align: center;
+    width: 50%;
+    height: 642px;
+    background: rgb(10, 10, 10, 0.70);
+    transition: .7s ease-in-out;
+    z-index: 10;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title-contact{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.nomYape{
+    margin-left: 5px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background: rgb(10, 10, 10);
+    border-bottom: 2px solid rgb(129, 129, 129);
+    color: white;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(129, 129, 129);
+}
+
+textarea{
+    resize: none;
+}
+
+
+.btn{
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 15px;
+    color: white;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: rgb(27, 27, 27);
+    scale: 1.03;
+}
+
+.contact-me{
+    border: 3px solid rgb(255, 255, 255);
+    border-left: none;
+    width: 50%;
+    height: 100%;
+    padding: 50px 55px;
+    background: rgb(10, 10, 10, 0.70);
+    text-align: center;
+    z-index: 10;
+}
+
+.title-more-contact{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+
+.more-contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.more-contact span{
+    margin-left: 5px;
+}
+
+.more-contact{
+    margin-bottom: 17px;
+    background: rgb(146, 1, 1);
+    padding: 17.5px;
+    border: 3px solid black;
+    border-radius: 30px;
+    transition: .2s linear;
+}
+
+.more-contact:hover{
+    scale: 1.03;
+    filter: brightness(0.6);
+}
+
+/*=============================================FOOTER=============================================*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    color: white;
+}
+
+.title-footer{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.subtitle-footer{
+    margin-top: -10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.redes-footer{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: .2s linear;
+}
+
+.redes-footer:hover{
+    filter: brightness(0.3);
+    background: rgb(255, 255, 255, 0.5);
+}
+
+/*=============================================ANIMATIONS=============================================*/
+
+
+
+/*=============================================RESPONSIVE=============================================*/
+
+@media screen and (max-width: 1080px) {
+    
+    body{
+        width: 100vw;
+    }
+
+    .boxpadre,
+    .button-home{
+        display: none;
+    }
+    
+    .wraper{
+        background-image: url(imgAnimations/img-lofi-movile.jpg);
+        background-size: cover;
+    }
+
+    .bar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-container{
+        position: fixed;
+        width: 345px;
+        width: 80vw;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .animal{
+        display: block;
+    }
+
+    .animal a{
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .animal a:active{
+        color: red;
+    }
+
+    .ul,li{
+        display: none;
+    }
+
+    .main{
+        width: 90%;
+        height: 500px;
+    }
+
+    .name-me{
+        font-size: 40px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .info-me{
+        padding: 10px;
+    }
+
+    .ico-redes{
+        display: flex;
+    }
+
+    .ul2{
+        gap: 30px;
+    }
+
+    .about-me{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .sobremi{
+        width: 95%;
+        height: 650px;
+        margin-left: 8px;
+    }
+
+    .title-sonbre-mi{
+        font-size: 22px;
+        padding:10px 125px;
+        margin: 15px;
+    }
+
+    .info-sobre-mi{
+        margin-top: -60px;
+        padding: 0px 30px;
+    }
+
+    .skills-title{
+        font-size: 25px;
+        padding: 10px 80px;
+        margin-top: -60px;
+    }
+
+    .my-skills{
+        width: 90%;
+        height: 190px;
+        margin-top: -60px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .ht, .cs, .js{
+        display: flex;
+    }
+
+    #proyects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .card{
+        width: 100%;
+        height: 400px;
+    }
+
+    .card-blur{
+        width: 100%;
+        height: 400px;
+    }
+
+    .card-blur img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .tarjetas-blur{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyects-title{
+        padding: 0;
+        text-align: center;
+    }
+
+    .card img{
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .title-card{
+        width: 350px;
+        width: 90%;
+    }
+
+    .title-card-porfolio{
+        width: 350px;
+        width: 90%;
+    }
+
+    .title-card-blur{
+        width: 350px;
+        width: 90%;
+    }
+
+    .ul4{
+        padding: 20px 50px;
+        gap: 70px;
+        border: none;
+        box-shadow: 0 0 20px 8px black;
+    }
+
+    .ul4 li a{
+        font-size: 40px;
+    }
+
+    .ul4 li{
+        display: flex;
+
+    }
+    
+    .ul4-porfolio{
+        padding: 20px 50px;
+        gap: 70px;
+        border: none;
+        box-shadow: 0 0 20px 8px black;
+    }
+
+    .ul4-porfolio li{
+        display: flex;
+    }
+
+    .ul4-porfolio li a{
+        font-size: 40px;
+    }
+
+    .section-contact{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    form{
+        /*width: 314px;*/
+        border: none;
+        width: 90%;
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    .contact-me{
+        /*width: 314px;*/
+        border: none;
+        margin-top: 0px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title-contact{
+        font-size: 38px;
+    }
+
+    .title-more-contact{
+        font-size: 45px;
+    }
+
+    .more-contact{
+        border: none;
+        box-shadow: 0 0 20px 8px black;
+    }
+
+    .footer{
+        width: 100%;
+        height: 200px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .title-footer{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+}
