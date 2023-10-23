@@ -4,6 +4,11 @@
     box-sizing: content-box;
 }
 
+:root{
+    --colors-in-page: rgb(220, 189, 109);
+    --boder-in-page: 50px;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -57,7 +62,8 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     /*background: rgb(146, 0, 0);*/
-    background-color: rgb(220, 189, 109);
+    /*background-color: rgb(220, 189, 109);*/
+    background-color: var(--colors-in-page);
     transition: .2s linear;
 }
 
@@ -79,11 +85,13 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
     /*background: rgb(0, 0, 39);*/
-    background-color: rgb(220, 189, 109);
+    /*background-color: rgb(220, 189, 109);*/
+    background-color: var(--colors-in-page);
     padding: 5px 20px;
     margin-left: 40px;
-    margin-top: 5px;
-    border-radius: 20px;
+    margin-top: 15px;
+    border-radius: var(--boder-in-page);
+    border: 3px solid black;
     position: absolute;
     box-shadow: 0px 0px 10px 5px black;
     z-index: 999;
@@ -115,19 +123,20 @@ body::-webkit-scrollbar-thumb{
     font-weight: bolder;
     transition: .2s linear;
     padding: 7px 9px;
-    border-radius: 10px;
+    border-radius: var(--boder-in-page);
 }
 
 .ul a:hover{
-    background-color: rgb(211, 177, 92);
+    background-color: rgb(216, 178, 83);
     box-shadow: 3px 3px 3px black;
     transform: scale(1.05);
+    border: 0.5px solid black;
 }
 
 .wraper{
     height: 100vh;
     width: 100%;
-    background-image: url(imgAnimations/Imagen-lofi.jpg);
+    /*background-image: url(imgAnimations/Imagen-lofi.jpg);*/
     object-fit: contain;
     display: grid;
     justify-items: center;
@@ -145,10 +154,11 @@ body::-webkit-scrollbar-thumb{
     height: 400px;
     width: 900px;
     /*background-color: rgba(0, 0, 0, 0.7);*/
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 55%, rgb(0, 0, 0, 0.9));
+    /*background: linear-gradient(rgba(0, 0, 0, 0.7) 55%, rgb(0, 0, 0, 0.9));*/
+    background: rgb(10, 10, 10, 0.50);
     min-width: 400px;
-    border: 3px solid rgb(141, 141, 141);
-    border-radius: 20px;
+    border: 3px solid rgb(220, 189, 109);
+    border-radius: var(--boder-in-page);
     display: grid;
     place-items: center;
     justify-items: center;
@@ -158,7 +168,6 @@ body::-webkit-scrollbar-thumb{
 
 .main:hover{
     transform: scale(1.01);
-    box-shadow: 0 0 10px rgb(152, 152, 152);
 }
 
 .name-me{
@@ -197,7 +206,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50%;
     border: 3px solid black;
     /*background: white;*/
-    background-color: rgb(220, 189, 109);
+    background-color: var(--colors-in-page);
     transition: .2s linear;
     padding: 8px 12px;
 }
@@ -269,8 +278,8 @@ body::-webkit-scrollbar-thumb{
 .img-mau{
     width: 350px;
     height: 500px;
-    border: 3px solid rgb(141, 141, 141);
-    border-radius: 20px;
+    border: 3px solid rgb(220, 189, 109);
+    border-radius: var(--boder-in-page);
     background-size: cover;
     box-shadow: 0 0 20px black;
     transition: .3s linear;
@@ -278,13 +287,12 @@ body::-webkit-scrollbar-thumb{
 
 .img-mau:hover{
     scale: 1.03;
-    box-shadow: 0 0 10px rgb(152, 152, 152);
 }
 
 .img-mau img{
     width: 350px;
     height: 500px;
-    border-radius: 20px;
+    border-radius: var(--boder-in-page);
 }
 
 .img-mau a{
@@ -300,27 +308,26 @@ body::-webkit-scrollbar-thumb{
 .sobremi{
     width: 700px;
     height: 500px;
-    border: 3px solid rgb(141, 141, 141);
-    border-radius: 20px;
+    border: 3px solid rgb(220, 189, 109);
+    border-radius: var(--boder-in-page);
     display: grid;
     place-items: center;
     justify-content: center;
     color: white;
     box-shadow: 0 0 20px black;
     /*background-color: #101022;*/
-    background:linear-gradient(#101022 20%, black);
+    background: rgb(10, 10, 10, 0.50);
     transition: .3s linear;
 }
 
 .sobremi:hover{
     transform: scale(1.03);
-    box-shadow: 0 0 10px rgb(152, 152, 152);
 }
 
 .title-sonbre-mi{
     font-size: 50px;
     padding: 0px 200px;
-    border-radius: 20px;
+    border-radius: var(--boder-in-page);
     border: 3px solid black;
     background: rgb(17, 17, 17);
     cursor: default;
@@ -335,7 +342,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 30px;
     margin-bottom: -20px;
     padding: 10px 100px;
-    border-radius: 20px;
+    border-radius: var(--boder-in-page);
     border: 3px solid black;
     background: rgb(17, 17, 17);
     cursor: default;
@@ -393,7 +400,7 @@ body::-webkit-scrollbar-thumb{
 .card{
     width: 250px;
     height: 300px;
-    border: 3px solid rgb(141, 141, 141);
+    border: 3px solid rgb(220, 189, 109);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -409,7 +416,7 @@ body::-webkit-scrollbar-thumb{
 
 .proyects-title{
     padding: 5px 500px;
-    border-radius: 20px;
+    border-radius: var(--boder-in-page);
     border: 3px solid black;
     font-size: 50px;
     background: rgb(17, 17, 17);
@@ -455,7 +462,7 @@ body::-webkit-scrollbar-thumb{
 .card-blur{
     width: 250px;
     height: 300px;
-    border: 3px solid rgb(141, 141, 141);
+    border: 3px solid rgb(220, 189, 109);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -493,10 +500,10 @@ body::-webkit-scrollbar-thumb{
     gap: 50px;
     margin-top: 31px;
     /*background-color: rgb(146, 0, 0);*/
-    background-color: rgb(220, 189, 109);
+    background-color: var(--colors-in-page);
     padding: 10px 15px;
     border-radius: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(220, 189, 109);
 }
 
 .ul4-porfolio li a{
@@ -512,7 +519,7 @@ body::-webkit-scrollbar-thumb{
     gap: 50px;
     margin-top: 25px;
     /*background-color: rgb(146, 0, 0);*/
-    background-color: rgb(220, 189, 109);
+    background-color: var(--colors-in-page);
     padding: 10px 15px;
     border-radius: 20px;
     border: 2px solid black;
@@ -548,14 +555,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 form{
-    padding: 50px 55px;
-    border: 3px solid rgb(141, 141, 141);
-    border-radius: 20px;
+    border: 3px solid rgb(220, 189, 109);
+    border-radius: var(--boder-in-page);
     /*border-right: none;*/
     text-align: center;
     width: 55%;
     height: 642px;
-    background: rgb(10, 10, 10, 0.70);
+    background: rgb(10, 10, 10, 0.50);
     transition: .7s ease-in-out;
     padding: 50px 80px;
     padding-right: 95px;
@@ -577,7 +583,8 @@ form{
 
 label{
     /*color: rgb(255, 255, 255);*/
-    color: rgb(220, 189, 109);
+    /*color: rgb(220, 189, 109);*/
+    color: var(--colors-in-page);
     font-size: 15px;
     font-weight: bolder;
     margin-bottom: 15px;
@@ -619,7 +626,7 @@ textarea{
     margin-top: 20px;
     border-radius: 25px;
     /*background-color: rgb(51, 51, 51);*/
-    background-color: rgb(220, 189, 109);
+    background-color: var(--colors-in-page);
     box-shadow: 0 0 20px black;
     cursor: pointer;
     transition: .2s ease-in-out;
@@ -684,7 +691,7 @@ textarea{
     justify-content: space-around;
     align-items: center;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .title-footer{
@@ -694,7 +701,7 @@ textarea{
 }
 
 .subtitle-footer{
-    margin-top: -10px;
+    margin-top: -5px;
     font-size: 18px;
     text-align: center;
     font-weight: bolder;
@@ -704,8 +711,7 @@ textarea{
     margin-left: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    /*background: rgb(255, 255, 255);*/
-    background-color: rgb(220, 189, 109);
+    background-color: var(--colors-in-page);
     padding: 8px 12px;
     font-size: 20px;
     border-radius: 50%;
@@ -718,9 +724,22 @@ textarea{
     background: rgb(255, 255, 255, 0.5);
 }
 
+
 /*=============================================ANIMATIONS=============================================*/
 
+[data-animation="fade"]{
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in .3s;
 
+    --opacity: 1;
+    --transform: translate: (0);
+}
+
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
 
 /*=============================================RESPONSIVE=============================================*/
 
@@ -736,7 +755,7 @@ textarea{
     }
     
     .wraper{
-        background-image: url(imgAnimations/img-lofi-movile.jpg);
+        /*background-image: url(imgAnimations/img-lofi-movile.jpg);*/
         background-size: cover;
     }
 
@@ -750,7 +769,7 @@ textarea{
         width: 345px;
         width: 80vw;
         margin: 0px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .animal{
