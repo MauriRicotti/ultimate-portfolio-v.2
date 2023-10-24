@@ -5,7 +5,7 @@
 }
 
 :root{
-    --colors-in-page: rgb(220, 189, 109);
+    --colors-in-page: rgb(213, 186, 116);
     --boder-in-page: 50px;
 }
 
@@ -157,7 +157,7 @@ body::-webkit-scrollbar-thumb{
     /*background: linear-gradient(rgba(0, 0, 0, 0.7) 55%, rgb(0, 0, 0, 0.9));*/
     background: rgb(10, 10, 10, 0.50);
     min-width: 400px;
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: var(--boder-in-page);
     display: grid;
     place-items: center;
@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 30px;
     margin-top: -25px;
     /*color: white;*/
-    color: rgb(220, 189, 109);
+    color: var(--colors-in-page);
     cursor: default;
 }
 
@@ -278,7 +278,7 @@ body::-webkit-scrollbar-thumb{
 .img-mau{
     width: 350px;
     height: 500px;
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: var(--boder-in-page);
     background-size: cover;
     box-shadow: 0 0 20px black;
@@ -308,7 +308,7 @@ body::-webkit-scrollbar-thumb{
 .sobremi{
     width: 700px;
     height: 500px;
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: var(--boder-in-page);
     display: grid;
     place-items: center;
@@ -328,9 +328,10 @@ body::-webkit-scrollbar-thumb{
     font-size: 50px;
     padding: 0px 200px;
     border-radius: var(--boder-in-page);
-    border: 3px solid black;
+    border: 3px solid var(--colors-in-page);
     background: rgb(17, 17, 17);
     cursor: default;
+    color: var(--colors-in-page);
 }
 
 .info-sobre-mi{
@@ -343,9 +344,10 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: -20px;
     padding: 10px 100px;
     border-radius: var(--boder-in-page);
-    border: 3px solid black;
+    border: 3px solid var(--colors-in-page);
     background: rgb(17, 17, 17);
     cursor: default;
+    color: var(--colors-in-page);
 }
 
 .my-skills{
@@ -400,7 +402,7 @@ body::-webkit-scrollbar-thumb{
 .card{
     width: 250px;
     height: 300px;
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -417,11 +419,11 @@ body::-webkit-scrollbar-thumb{
 .proyects-title{
     padding: 5px 500px;
     border-radius: var(--boder-in-page);
-    border: 3px solid black;
+    border: 3px solid var(--colors-in-page);
     font-size: 50px;
     background: rgb(17, 17, 17);
     margin: 20px 0px;
-    color: white;
+    color: var(--colors-in-page);
     cursor: default;
 }
 
@@ -462,7 +464,7 @@ body::-webkit-scrollbar-thumb{
 .card-blur{
     width: 250px;
     height: 300px;
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -503,7 +505,7 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--colors-in-page);
     padding: 10px 15px;
     border-radius: 20px;
-    border: 2px solid rgb(220, 189, 109);
+    border: 2px solid black;
 }
 
 .ul4-porfolio li a{
@@ -554,31 +556,117 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
 }
 
+.padreform{
+    padding: 10px;
+}
+
+.boxprueba{
+    width: 50%;
+    height: 100%;
+}
+
+.parrafos-from{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    color: white;
+    margin-top: 10%;
+}
+
+.p1from,
+.p2from{
+    margin-bottom: 30px;
+}
+
+.p3from{
+    color: var(--colors-in-page);
+}
+
+.p3span{
+    margin-left: 5px;
+    color: white;
+}
+
+.buttons-form{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 165px;
+    gap: 10px;
+
+}
+
+
+
+.otters-buttons{
+    width: 165px;
+}
+
+.redes-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--colors-in-page);
+    border-radius: var(--boder-in-page);
+    width: 100%;
+    height: 40px;
+    transition: .2s linear;
+}
+
+.redes-form:hover{
+    filter: brightness(0.3);
+    background: rgb(255, 255, 255, 0.5);  
+}
+
+.span-from{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
 form{
-    border: 3px solid rgb(220, 189, 109);
+    border: 3px solid var(--colors-in-page);
     border-radius: var(--boder-in-page);
     /*border-right: none;*/
     text-align: center;
-    width: 55%;
-    height: 642px;
+    width: auto;
+    /*height: 642px;*/
+    height: 500px;
     background: rgb(10, 10, 10, 0.50);
     transition: .7s ease-in-out;
     padding: 50px 80px;
     padding-right: 95px;
-    z-index: 10;
+    display: flex;
 }
 
 .input-group{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 50%;
 }
 
 .title-contact{
-    color: rgb(255, 255, 255);
+    color: var(--colors-in-page);
     font-size: 35px;
-    padding-bottom: 30px;
-    margin-top: -30px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    /*margin-top: -30px;*/
+}
+
+.title-contact::after{
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    margin-left: 10px;
+    border-radius: var(--boder-in-page);
+    background-color: var(--colors-in-page);
 }
 
 label{
@@ -595,13 +683,13 @@ label{
 }
 
 input, textarea{
-    padding: 17px 25px;
+    padding: 10px 25px;
     border-radius: 10px;
     border: none;
     margin-bottom: 20px;
-    background: rgb(10, 10, 10);
-    /*border-bottom: 2px solid rgb(129, 129, 129);*/
-    border-bottom: 2px solid rgb(220, 189, 109);
+    background: rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px black;
+    border-bottom: 2px solid var(--colors-in-page);
     color: white;
     outline: none;
 }
@@ -633,13 +721,12 @@ textarea{
 }
 
 .btn:hover{
-    background-color: rgb(27, 27, 27);
-    scale: 1.03;
-    color: white;
+    filter: brightness(0.3);
+    background: rgb(255, 255, 255, 0.5);
 }
 
-.contact-me{
-    border: 3px solid rgb(141, 141, 141);
+/*.contact-me{
+    border: 3px solid var(--colors-in-page);
     border-left: none;
     width: 50%;
     height: 100%;
@@ -679,7 +766,7 @@ textarea{
 .more-contact:hover{
     scale: 1.03;
     filter: brightness(0.6);
-}
+}*/
 
 /*=============================================FOOTER=============================================*/
 
@@ -698,6 +785,7 @@ textarea{
     font-size: 25px;
     font-weight: bolder;
     color: rgb(220, 189, 109);
+    color: var(--colors-in-page);
 }
 
 .subtitle-footer{
@@ -705,6 +793,7 @@ textarea{
     font-size: 18px;
     text-align: center;
     font-weight: bolder;
+    color: var(--colors-in-page);
 }
 
 .redes-footer{
@@ -725,22 +814,23 @@ textarea{
 }
 
 
-/*=============================================ANIMATIONS=============================================*/
-
-[data-animation="fade"]{
+/*=============================================STYLES OF THE ANIMATIONS=============================================*/
+/*
+.animate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-1 .animate{
     opacity: 0;
-    transform: translate(100%);
-    transition: .6s ease-in .3s;
-
-    --opacity: 1;
-    --transform: translate: (0);
+    transition: .5s ease;
 }
 
-.unset{
-    opacity: var(--opacity);
-    transform: var(--transform);
+.sec-1.show-animate .animate{
+    transform: translateX(0);
+    opacity: 1;
 }
-
+*/
 /*=============================================RESPONSIVE=============================================*/
 
 @media screen and (max-width: 1080px) {
@@ -817,7 +907,7 @@ textarea{
     .after-ig:hover::after, 
     .after-git:hover::after, 
     .after-twi:hover::after, 
-    .after-linkedIn:hover::after, 
+    .after-lin:hover::after, 
     .after-thr:hover::after{
         display: none;
     }
@@ -965,10 +1055,24 @@ textarea{
         margin: 0;
     }
 
+    .boxprueba{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .buttons-form{
+        width: 100%;
+    }
+
     form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /*width: 314px;*/
         border: none;
         width: 90%;
+        height: auto;
         padding: 20px;
         padding-top: 50px;
     }
@@ -985,14 +1089,22 @@ textarea{
         font-size: 38px;
     }
 
+    .title-contact::after{
+        display: none;
+    }
+
     .title-more-contact{
         font-size: 45px;
     }
 
-    .more-contact{
+    .input-group{
+        width: 100%;
+    }
+
+    /*.more-contact{
         border: none;
         box-shadow: 0 0 20px 8px black;
-    }
+    }*/
 
     .footer{
         width: 100vw;
