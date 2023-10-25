@@ -19,10 +19,6 @@ window.onscroll = () => {
 
 
 
-
-
-
-
 particlesJS(
     {
         "particles": {
