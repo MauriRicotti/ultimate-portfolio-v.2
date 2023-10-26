@@ -1,23 +1,21 @@
 //ANIMATIONS OF THE PAGE
 
-//let sections = document.querySelectorAll('article');
+let animate = document.querySelectorAll(".animate");
 
-window.onscroll = () => {
-  sections.forEach(sec =>{
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-
-    if (top >= offset && top < offset + height) {
-      sec.classList.add('show-animate');
+function mostrarScroll() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (var i=0; i<animate.length; i++) {
+    let alturaAnimado = animate[i].offsetTop;
+    if(alturaAnimado - 500 < scrollTop) {
+      animate[i].style.opacity= 1;
+      animate[i].classList.add("see-left")
     }
-    else {
-      sec.classList.remove('show-animate');
-    }
-  })
+  }
 }
 
+window.addEventListener('scroll', mostrarScroll);
 
+//PARTICLES IN PAGE
 
 particlesJS(
     {
