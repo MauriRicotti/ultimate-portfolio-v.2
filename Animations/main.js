@@ -1,6 +1,6 @@
 //ANIMATIONS OF THE PAGE
 
-let animate = document.querySelectorAll(".animate");
+//let animate = document.querySelectorAll(".animate");
 
 function mostrarScroll() {
   let scrollTop = document.documentElement.scrollTop;
