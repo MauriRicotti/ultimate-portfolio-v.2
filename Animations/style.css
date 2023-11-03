@@ -13,13 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background: #0a0a0a;
-    height: 100vh;
-    width: 100%;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 body::-webkit-scrollbar{
     background-color: black;
     width: 4px;
@@ -30,6 +23,15 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
     background-color: rgb(59, 59, 59);
 }
+
+body{
+    background: #0a0a0a;
+    height: 100%;
+    width: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(black 65%, rgb(0, 0, 33));
+}
+
 
 #particles-js{
     width: 100%;
@@ -151,12 +153,10 @@ body::-webkit-scrollbar-thumb{
 .main{
     margin-top: 50px;
     height: 75vh;
-    width: 80vw;
+    width: 85vw;
     min-width: 400px;
     display: flex;
     padding: 0 0px;
-    /*background-color: rgba(0, 0, 0, 0.7);*/
-    /*background: linear-gradient(rgba(0, 0, 0, 0.7) 55%, rgb(0, 0, 0, 0.9));*/
     background: rgb(10, 10, 10, 0.50);
     border: 3px solid var(--colors-in-page);
     border-radius: var(--boder-in-page);
@@ -164,10 +164,6 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     transition: .3s linear;
     box-shadow: 0 0 20px black;
-}
-
-.main:hover{
-    box-shadow: 10px 10px 10px 10px black;
 }
 
 .img-main img{
@@ -304,14 +300,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 .img-mau:hover{
-    scale: 1.05;
+    scale: 1.02;
     box-shadow: 0px 0px 10px 10px black;
 }
 
 .img-mau img{
     width: 350px;
     height: 500px;
-    border-radius: var(--boder-in-page);
+    border-radius: 30px;
 }
 
 .img-mau a{
@@ -334,7 +330,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     color: white;
     /*background-color: #101022;*/
-    background: rgb(10, 10, 10, 0.50);
+    background: rgba(20, 20, 20, 0.5);
     transition: .3s linear;
 }
 
@@ -448,14 +444,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 .proyects-title{
-    padding: 5px 500px;
+    width: 95vw;
     border-radius: var(--boder-in-page);
     border: 3px solid var(--colors-in-page);
     font-size: 50px;
     background: rgb(17, 17, 17);
-    margin: 20px 0px;
     color: var(--colors-in-page);
     cursor: default;
+    text-align: center;
 }
 
 .all-cards{
@@ -807,7 +803,7 @@ textarea{
 .footer{
     width: 100%;
     height: 100px;
-    background: rgb(23, 23, 23);
+    background: rgb(4, 4, 4);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -924,10 +920,10 @@ textarea{
 
     .main{
         width: 90%;
-        height: 100vh;
+        height: 70%;
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
+        margin-top: -50px;
     }
 
     .main:hover{
@@ -947,7 +943,7 @@ textarea{
         margin-top: 160px;
         margin-bottom: -60px;
         scale: 1.5;
-        margin-left: 30%;
+        padding: 0;
     }
 
     .name-me{
@@ -993,7 +989,7 @@ textarea{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 200px;
+        margin-top: -100px;
         height: auto;
     }
 
@@ -1015,9 +1011,10 @@ textarea{
     }
 
     .sobremi{
-        width: 95%;
+        width: 100%;
         height: 650px;
-        margin-left: 8px;
+        margin-top: 10px;
+        background: none;
     }
 
     .title-sonbre-mi{
@@ -1190,10 +1187,11 @@ textarea{
         align-items: center;
         /*width: 314px;*/
         border: none;
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 0px;
         padding-top: 50px;
+        background: none;
     }
 
     .contact-me{
