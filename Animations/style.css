@@ -16,7 +16,7 @@ html{
 body::-webkit-scrollbar{
     background-color: black;
     width: 10px;
-
+    display: none;
 }
 
 body::-webkit-scrollbar-thumb{
@@ -40,6 +40,7 @@ body{
     position: fixed;
     z-index: -5;
 }
+
 .boxpadre{
     height: 100%;
     width: 100%;
@@ -811,28 +812,7 @@ textarea{
 
 
 /*=============================================STYLES OF THE ANIMATIONS=============================================*/
-/*.animate{
-    opacity: 0;
-    transition: all 2s;
-}
 
-.see-left{
-    animation: see-left 2s;
-}
-
-@keyframes see-left {
-    0%{
-        scale: 0;
-    }
-
-    50%{
-    }
-
-    100%{
-        transform: translateX(0);
-        scale: 1;
-    }
-}*/
 /*=============================================RESPONSIVE=============================================*/
 
 @media screen and (max-width: 720px) {

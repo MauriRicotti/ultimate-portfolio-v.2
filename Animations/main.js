@@ -1,19 +1,101 @@
 //ANIMATIONS OF THE PAGE
 
-let animate = document.querySelectorAll(".animate");
+let tl = gsap.timeline({
+  repeat: 0,
+});
 
-function mostrarScroll() {
-  let scrollTop = document.documentElement.scrollTop;
-  for (var i=0; i<animate.length; i++) {
-    let alturaAnimado = animate[i].offsetTop;
-    if(alturaAnimado - 500 < scrollTop) {
-      animate[i].style.opacity= 1;
-      animate[i].classList.add("see-left")
+let tl2 = gsap.timeline({
+  repeat: 0,
+});
+
+// =========== SCROLLTRIGGER - ANIMATION ===========
+gsap.registerPlugin(ScrollTrigger);
+
+var st = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.button-home-gsap',
+        markers: false,
+        start: '-=600 0',
+        end: '-=600 0',
+        scrub: 2,
     }
-  }
-}
+});
 
-window.addEventListener('scroll', mostrarScroll);
+// =========== SUPERIOR - BAR - ANIMATION ===========
+tl.from('.bar-gsap' , {
+  duration: 1,
+  opacity: 0,
+  delay: 0.5,
+  scale: 0,
+});
+
+tl.to('.bar-gsap' , {
+  scale: 1,
+  opacity: 1,
+});
+
+// =========== MAIN - ANIMATION ===========
+tl2.from('.main-gsap' , {
+  duration: 1,
+  opacity: 0,
+  delay: 0.5,
+  scale: 0,
+})
+
+tl2.to('.main-gsap' , {
+  opacity: 1,
+  scale: 1,
+  duration: 1,
+});
+
+// =========== BUTTON - HOME - ANIMATION ===========
+st.from('.button-home-gsap', {
+  duration: 1,
+  opacity: 0,
+  scale: 0,
+})
+
+st.to('.button-home-gsap', {
+  duration: 1,
+  opacity: 1,
+  scale: 1,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //PARTICLES IN PAGE
 
