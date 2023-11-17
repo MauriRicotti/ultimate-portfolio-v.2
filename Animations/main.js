@@ -21,6 +21,16 @@ var st = gsap.timeline({
     }
 });
 
+var st2 = gsap.timeline({
+  scrollTrigger: {
+      trigger: '.button-home-gsap',
+      markers: false,
+      start: '-=600 0',
+      end: '-=600 0',
+      scrub: 5,
+  }
+});
+
 // =========== PARTICLES - ANIMATION ===========
 gsap.to('.particles-gsap', {
   duration: 1,
@@ -30,7 +40,6 @@ gsap.to('.particles-gsap', {
 
 
 // =========== SUPERIOR - BAR - ANIMATION ===========
-
 gsap.to('.bar-gsap', {
   duration: 1,
   opacity: 1,
@@ -38,7 +47,6 @@ gsap.to('.bar-gsap', {
 })
 
 // =========== MAIN - ANIMATION ===========
-
 gsap.to('.main-gsap', {
   duration: 1,
   opacity: 1,
@@ -58,7 +66,27 @@ st.to('.button-home-gsap', {
   scale: 1,
 })
 
+// =========== ABOUT - ME- ANIMATION ===========
+st.from('.about-me-gsap', {
+  duration: 0.5,
+  opacity: 0,
+})
 
+st.to('.about-me-gsap', {
+  duration: .5,
+  opacity: 1,
+})
+
+
+st2.from('.proyects-gsap', {
+  duration: 3,
+  opacity: 0,
+})
+
+st2.to('.proyects-gsap', {
+  duration: 3,
+  opacity: 1,
+})
 
 
 
