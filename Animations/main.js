@@ -21,42 +21,39 @@ var st = gsap.timeline({
     }
 });
 
-// =========== SUPERIOR - BAR - ANIMATION ===========
-tl.from('.bar-gsap' , {
+// =========== PARTICLES - ANIMATION ===========
+gsap.to('.particles-gsap', {
   duration: 1,
-  opacity: 0,
-  delay: 0.5,
-  scale: 0,
-});
-
-tl.to('.bar-gsap' , {
-  scale: 1,
   opacity: 1,
-});
-
-// =========== MAIN - ANIMATION ===========
-tl2.from('.main-gsap' , {
-  duration: 1,
-  opacity: 0,
-  delay: 0.5,
-  scale: 0,
+  delay: 1.3,
 })
 
-tl2.to('.main-gsap' , {
-  opacity: 1,
-  scale: 1,
+
+// =========== SUPERIOR - BAR - ANIMATION ===========
+
+gsap.to('.bar-gsap', {
   duration: 1,
-});
+  opacity: 1,
+  delay: 0.5,
+})
+
+// =========== MAIN - ANIMATION ===========
+
+gsap.to('.main-gsap', {
+  duration: 1,
+  opacity: 1,
+  delay: 1,
+})
 
 // =========== BUTTON - HOME - ANIMATION ===========
 st.from('.button-home-gsap', {
-  duration: 1,
+  duration: 0.5,
   opacity: 0,
   scale: 0,
 })
 
 st.to('.button-home-gsap', {
-  duration: 1,
+  duration: 0.5,
   opacity: 1,
   scale: 1,
 })

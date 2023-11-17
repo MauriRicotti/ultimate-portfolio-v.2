@@ -39,6 +39,8 @@ body{
     height: 100vh;
     position: fixed;
     z-index: -5;
+
+    opacity: 0;
 }
 
 .boxpadre{
@@ -80,6 +82,10 @@ body{
     color: black;
     text-decoration: none;
     padding:  8px 10px;
+}
+
+.bar{
+    opacity: 0;
 }
 
 .header-container{
@@ -168,6 +174,9 @@ body{
     transition: .3s linear;
     box-shadow: 0 0 20px black;
     background: linear-gradient(rgb(1, 1, 1, 0.50) 70%, rgb(0, 0, 33, 0.50));
+
+    /*animation*/
+    opacity: 0;
 }
 
 .img-main img{
