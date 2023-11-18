@@ -4,10 +4,6 @@ let tl = gsap.timeline({
   repeat: 0,
 });
 
-let tl2 = gsap.timeline({
-  repeat: 0,
-});
-
 // =========== SCROLLTRIGGER - ANIMATION ===========
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,9 +21,19 @@ var st2 = gsap.timeline({
   scrollTrigger: {
       trigger: '.button-home-gsap',
       markers: false,
-      start: 'top 0',
+      start: '+=100 0',
       end: '-=600 0',
       scrub: 5,
+  }
+});
+
+var card = gsap.timeline({
+  scrollTrigger: {
+      trigger: '.button-home-gsap',
+      markers: false,
+      start: '100 0',
+      end: '-=600 0',
+      scrub: 2,
   }
 });
 
@@ -36,63 +42,121 @@ gsap.to('.particles-gsap', {
   duration: 1,
   opacity: 1,
   delay: 1.3,
-})
+});
 
 
 // =========== SUPERIOR - BAR - ANIMATION ===========
 gsap.to('.bar-gsap', {
-  duration: 1,
+  duration: 2,
   opacity: 1,
-  delay: 0.5,
-})
+  delay: 3.5,
+});
 
 // =========== MAIN - ANIMATION ===========
 gsap.to('.main-gsap', {
-  duration: 1,
+  duration: 2,
   opacity: 1,
   delay: 1,
-})
+  x: 0,
+  ease: 'elastic.out(1, 1)',
+});
 
 // =========== BUTTON - HOME - ANIMATION ===========
 st.from('.button-home-gsap', {
   duration: 0.5,
   opacity: 0,
   scale: 0,
-})
+});
 
 st.to('.button-home-gsap', {
   duration: 0.5,
   opacity: 1,
   scale: 1,
-})
+});
 
 // =========== ABOUT - ME- ANIMATION ===========
 st.from('.about-me-gsap', {
   duration: 0.5,
   opacity: 0,
-})
+});
 
 st.to('.about-me-gsap', {
   duration: .5,
   opacity: 1,
-})
+});
 
-
+// =========== PROYECTS - ANIMATION ===========
 st2.from('.proyects-gsap', {
-  duration: 3,
+  duration: 0.5,
   opacity: 0,
-})
+  delay: 0.2,
+});
 
 st2.to('.proyects-gsap', {
-  duration: 3,
+  duration: 0.2,
   opacity: 1,
-})
+});
 
+// =========== CARDS - ANIMATION ===========
+card.from('.card-gsap-1', {
+  duration: 0.1,
+  opacity: 0,
+});
 
+card.to('.card-gsap-1', {
+  duration: 0.1,
+  opacity: 1,
+});
 
+card.from('.card-gsap-2', {
+  duration: 0.1,
+  opacity: 0,
+});
 
+card.to('.card-gsap-2', {
+  duration: 0.1,
+  opacity: 1,
+});
 
+card.from('.card-gsap-3', {
+  duration: 0.1,
+  opacity: 0,
+});
 
+card.to('.card-gsap-3', {
+  duration: 0.1,
+  opacity: 1,
+});
+
+card.from('.card-gsap-4', {
+  duration: 0.1,
+  opacity: 0,
+});
+
+card.to('.card-gsap-4', {
+  duration: 0.1,
+  opacity: 1,
+});
+
+card.from('.card-gsap-5', {
+  duration: 0.1,
+  opacity: 0,
+});
+
+card.to('.card-gsap-5', {
+  duration: 0.1,
+  opacity: 1,
+});
+
+card.from('.card-gsap-6', {
+  duration: 0.1,
+  opacity: 0,
+});
+
+card.to('.card-gsap-6', {
+  duration: 0.1,
+  opacity: 1,
+});
 
 
 
