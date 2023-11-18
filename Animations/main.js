@@ -25,7 +25,7 @@ var st2 = gsap.timeline({
   scrollTrigger: {
       trigger: '.button-home-gsap',
       markers: false,
-      start: '-=600 0',
+      start: 'top 0',
       end: '-=600 0',
       scrub: 5,
   }
